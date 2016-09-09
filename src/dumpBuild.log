@@ -1,0 +1,153 @@
+
+03987@SKCC15N00768 MINGW32 ~
+$ ls
+airstrike-pre6a-src_freebsd_and_vc7  SDL_mixer-1.2.12  SDL_mixer-1.2.12.zip  SDL-1.2.15  SDL-1.2.15.zip  tmp  Zelda3T_US-src-linux  ZeldaOLB_US-src-linux  ZeldaPicross_US-src-windows  ZeldaROTH_US-src-linux
+
+03987@SKCC15N00768 MINGW32 ~
+$ cd airstrike-pre6a-src_freebsd_and_vc7/
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7
+$ ls
+airstrike-pre6a-src
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7
+$ cd *
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$ ls
+airstrike-pre6a-src.ilk  airstrike-pre6a-src.sln  airstrike-pre6a-src.vcproj  ChangeLog  data  FREEBSD_INFO  LICENSE   pov     src
+airstrike-pre6a-src.ncb  airstrike-pre6a-src.suo  airstrikerc                 COPYING    doc   INSTALL       Makefile  README  utils
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$ make clean;make
+rm -f
+rm -f airstrike
+make -C src airstrike
+make[1]: 디렉터리 '/home/03987/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src/src' 들어감
+cc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o airstrike.o airstrike.c
+make[1]: cc: 명령을 찾지 못했음
+<내장>: 'airstrike.o' 타겟에 대한 명령이 실패했습니다
+make[1]: *** [airstrike.o] 오류 127
+make[1]: 디렉터리 '/home/03987/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src/src' 나감
+Makefile:6: 'airstrike' 타겟에 대한 명령이 실패했습니다
+make: *** [airstrike] 오류 2
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$ gcc
+gcc.exe: fatal error: no input files
+compilation terminated.
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$ cc
+bash: cc: command not found
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$ export cc=gcc
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$ make clean;make
+rm -f
+rm -f airstrike
+make -C src airstrike
+make[1]: 디렉터리 '/home/03987/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src/src' 들어감
+cc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o airstrike.o airstrike.c
+make[1]: cc: 명령을 찾지 못했음
+<내장>: 'airstrike.o' 타겟에 대한 명령이 실패했습니다
+make[1]: *** [airstrike.o] 오류 127
+make[1]: 디렉터리 '/home/03987/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src/src' 나감
+Makefile:6: 'airstrike' 타겟에 대한 명령이 실패했습니다
+make: *** [airstrike] 오류 2
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$ cc
+bash: cc: command not found
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$ export CC=gcc
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$ make
+make -C src airstrike
+make[1]: 디렉터리 '/home/03987/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src/src' 들어감
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o airstrike.o airstrike.c
+airstrike.c:2:0: warning: ignoring #pragma comment  [-Wunknown-pragmas]
+ #pragma comment(lib, "SDL.lib")
+ ^
+airstrike.c:3:0: warning: ignoring #pragma comment  [-Wunknown-pragmas]
+ #pragma comment(lib, "SDLmain.lib")
+ ^
+airstrike.c:4:0: warning: ignoring #pragma comment  [-Wunknown-pragmas]
+ #pragma comment(lib, "SDL_mixer.lib")
+ ^
+airstrike.c:5:0: warning: ignoring #pragma comment  [-Wunknown-pragmas]
+ #pragma comment(lib, "SDL_image.lib")
+ ^
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o config.o config.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o control.o control.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o level.o level.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o mech.o mech.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o players.o players.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sound.o sound.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite/animation.o sprite/animation.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite/bitmask.o sprite/bitmask.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite/dirty.o sprite/dirty.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite/global.o sprite/global.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite/sdlutils.o sprite/sdlutils.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite/sprite.o sprite/sprite.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/airballoon.o sprite_types/airballoon.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/biplane.o sprite_types/biplane.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/bird.o sprite_types/bird.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/blueplane.o sprite_types/blueplane.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/bomb.o sprite_types/bomb.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/bonusmachine.o sprite_types/bonusmachine.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/bouncer.o sprite_types/bouncer.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/bullet.o sprite_types/bullet.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/cannon.o sprite_types/cannon.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/cloud.o sprite_types/cloud.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/dust.o sprite_types/dust.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/energymeter.o sprite_types/energymeter.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/explosions.o sprite_types/explosions.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/fire.o sprite_types/fire.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/hangar.o sprite_types/hangar.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/mark.o sprite_types/mark.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/message.o sprite_types/message.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/missile.o sprite_types/missile.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/parachute.o sprite_types/parachute.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/puff.o sprite_types/puff.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/smoke.o sprite_types/smoke.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types/zeppelin.o sprite_types/zeppelin.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o sprite_types.o sprite_types.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o support/console.o support/console.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o support/maths.o support/maths.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o support/names.o support/names.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o support/text.o support/text.c
+gcc -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX    -c -o winds.o winds.c
+gcc -o airstrike -g -O2 -Wall -Wno-unused  -I/mingw32/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main -Isprite -I. -Isupport -DINLINE=inline -DLINUX  ./airstrike.o ./config.o ./control.o ./level.o ./mech.o ./players.o ./sound.o ./sprite/animation.o ./sprite/bitmask.o ./sprite/dirty.o ./sprite/global.o ./sprite/sdlutils.o ./sprite/sprite.o ./sprite_types/airballoon.o ./sprite_types/biplane.o ./sprite_types/bird.o ./sprite_types/blueplane.o ./sprite_types/bomb.o ./sprite_types/bonusmachine.o ./sprite_types/bouncer.o ./sprite_types/bullet.o ./sprite_types/cannon.o ./sprite_types/cloud.o ./sprite_types/dust.o ./sprite_types/energymeter.o ./sprite_types/explosions.o ./sprite_types/fire.o ./sprite_types/hangar.o ./sprite_types/mark.o ./sprite_types/message.o ./sprite_types/missile.o ./sprite_types/parachute.o ./sprite_types/puff.o ./sprite_types/smoke.o ./sprite_types/zeppelin.o ./sprite_types.o ./support/console.o ./support/maths.o ./support/names.o ./support/text.o ./winds.o `sdl-config --libs` -lSDL_image
+make[1]: 디렉터리 '/home/03987/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src/src' 나감
+mv src/airstrike .
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$ ls
+airstrike.exe            airstrike-pre6a-src.ncb  airstrike-pre6a-src.suo     airstrikerc  COPYING  doc           INSTALL  Makefile  README  utils
+airstrike-pre6a-src.ilk  airstrike-pre6a-src.sln  airstrike-pre6a-src.vcproj  ChangeLog    data     FREEBSD_INFO  LICENSE  pov       src
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$ ./airstrike.exe
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$ ./airstrike.exe
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$ ./airstrike.exe
+
+03987@SKCC15N00768 MINGW32 ~/airstrike-pre6a-src_freebsd_and_vc7/airstrike-pre6a-src
+$

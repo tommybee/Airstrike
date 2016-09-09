@@ -1,0 +1,31 @@
+Instructions to build Airstrike on Freebsd 4.x or 5.x 
+
+1. Install SDL 1.2 
+   
+   cd /usr/ports/devel/sdl12/
+   make install clean
+   
+2. Make sure you have the configuration file '/usr/local/bin/sdl-config'
+   If it doesn't exist you must make a symbolic link,
+   
+   ln -s /usr/local/bin/sdl11-config /usr/local/bin/sdl-config
+   
+3. Install SDL Image
+
+   cd /usr/ports/graphics/sdl_image
+   make install clean
+
+4. Edit the Makefile of airstrike 'src/Makefile'
+
+   Change line 4 
+   'CFLAGS += -DLINUX' to
+   '# CFLAGS += -DLINUX'
+   
+5. Run 'gmake' or 'gmake airstrike-sound'
+
+
+
+Greetings
+
+M.Mastenbroek
+   
